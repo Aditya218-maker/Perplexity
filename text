@@ -1,0 +1,20 @@
+perplexity-
+
+authentication system
+Chat with AI
+Chat History
+Message Storage
+AI with Internet Research feature
+
+
+### DATA MODELLING ###
+
+## How user data will be stored in database:  USER collection
+a user will have : user id, username, email, passw, verified or not(email of the user is verified or not), user created at , updated at 
+
+## Chat history will have: Chat collection
+chat id, kis user ki chat hai(kyuki ek user k paas multiple chats ho skti hain), chat title, chat created at, chat updated at
+
+## Message: message collection
+messg id, messg kis chat ki hai(ek chat me multiple messg ho skte hain), messg k andr ka content kya hai, messg ka role kya hai yaani ai ka mssg hai ya user ka mssg hai 
+
