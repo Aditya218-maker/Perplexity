@@ -13,6 +13,7 @@ const authRouter = Router();
  */
 authRouter.post("/register", registerValidator, register);
 
+
 /**
  * @route POST /api/auth/login
  * @desc Login user and return JWT token
@@ -20,6 +21,8 @@ authRouter.post("/register", registerValidator, register);
  * @body { email, password }
  */
 authRouter.post("/login", loginValidator, login)
+
+
 
 /**
  * @route GET /api/auth/get-me
