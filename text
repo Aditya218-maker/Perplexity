@@ -23,3 +23,9 @@ messg id, messg kis chat ki hai(ek chat me multiple messg ho skte hain), messg k
 ## pehle user aata tha server pe register krta tha, data save hota tha DB me, server token generate krta tha, wo token user ko dedeta tha
 
 ## is baar token generate nahi krwaenge user apna email bhejega register krte waqt, is email pe ham ek link bhejenege aur jab user wo link pe click krega server pe ek req aayegi and then server db pe jaake verified ko true pe set krdega => ab user phrse server pe login krega, then uske credentials ko check kiya jayega, aur ab server ek token dega
+
+## Gen AI => content generate krna [text, code, image, audio, video]
+
+## AI Service Provider (ASPs) => 1. Training LLM    2. Hosting an LLM     3. Providing APIs to acess the LLM
+
+## 
