@@ -1,14 +1,15 @@
-//this file manages all the states related to authentication 
-
 import { createSlice } from "@reduxjs/toolkit";
 
 const authSlice = createSlice({
+    //Initial user state
     name: "auth",
     initialState: {
         user: null,
         loading: true,
         error: null,
     },
+
+    //3 reducers
     reducers: {
         setUser: (state, action) => {
             state.user = action.payload
