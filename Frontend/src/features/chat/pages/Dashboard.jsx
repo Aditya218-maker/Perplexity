@@ -13,7 +13,7 @@ const Dashboard = () => {
 
     useEffect(()=>{
       chat.initializeSocketConnection()
-    },[])
+    },[ ])
 
   return (
     <div>Dashboard</div>
