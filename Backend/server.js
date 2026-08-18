@@ -1,15 +1,15 @@
 import 'dotenv/config'
-import express from 'express';
+import express from 'express'
 import app from './src/app.js'
 import http from "http"
 import connectDB from './src/config/database.js'
-import { initSocket } from './src/sockets/server.socket.js';
+import { initSocket } from './src/sockets/server.socket.js'
 
 const PORT = process.env.PORT || 8000
 
-const httpServer = http.createServer(app);
+const httpServer = http.createServer(app)
 
-initSocket(httpServer);
+initSocket(httpServer)
 
 connectDB().catch(err => {
   console.error('MongoDB connection failed:', err)
