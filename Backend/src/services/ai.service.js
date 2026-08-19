@@ -44,6 +44,5 @@ export async function generateChatTitle (message) {
             "${message}"
         `)
   ])
-
   return response.text
 }
