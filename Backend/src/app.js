@@ -4,6 +4,7 @@ import { Model } from "mongoose";
 import morgan from "morgan";
 import cors from "cors";
 import authRouter from "./routes/auth.routes.js"
+import chatRouter from "./routes/chat.routes.js";
 
 const app = express();
 
@@ -25,6 +26,7 @@ app.get("/", (req, res) => {
 
 
 app.use("/api/auth", authRouter);
+app.use("/api/chat", chatRouter)
 
 
 export default app;
