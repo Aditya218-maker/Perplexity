@@ -3,11 +3,9 @@ import { sendMessage, getChats, getMessages, deleteChat } from "../service/chat.
 import { setChats, setCurrentChatId, setError, setLoading, createNewChat, addNewMessage, addMessages } from "../chat.slice";
 import { useDispatch } from "react-redux";
 
-
 export const useChat = () => {
 
     const dispatch = useDispatch()
-
 
     async function handleSendMessage({ message, chatId }) {
         dispatch(setLoading(true))
