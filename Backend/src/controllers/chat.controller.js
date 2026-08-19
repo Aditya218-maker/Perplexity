@@ -6,7 +6,6 @@ export async function sendMessage(req, res) {
 
     const { message, chat: chatId } = req.body;
 
-
     let title = null, chat = null;
 
     if (!chatId) {
@@ -32,7 +31,6 @@ export async function sendMessage(req, res) {
         content: result,
         role: "ai"
     })
-
 
     res.status(201).json({
         title,
