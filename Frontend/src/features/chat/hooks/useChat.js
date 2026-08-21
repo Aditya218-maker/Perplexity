@@ -47,8 +47,6 @@ export const useChat = () => {
 
     async function handleOpenChat(chatId, chats) {
 
-        console.log(chats[ chatId ]?.messages.length)
-
         if (chats[ chatId ]?.messages.length === 0) {
             const data = await getMessages(chatId)
             const { messages } = data
