@@ -1,10 +1,10 @@
-import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
+import { ChatGoogle } from "@langchain/google";
 import { ChatMistralAI } from "@langchain/mistralai"
 import { HumanMessage, SystemMessage, AIMessage, tool, createAgent } from "langchain";
 import * as z from "zod";
 import { searchInternet } from "./internet.service.js";
 
-const geminiModel = new ChatGoogleGenerativeAI({
+const geminiModel = new ChatGoogle({
     model: "gemini-flash-latest",
     apiKey: process.env.GEMINI_API_KEY
 });
@@ -70,5 +70,3 @@ export async function generateChatTitle(message) {
     return response.text;
 
 }
-
-
