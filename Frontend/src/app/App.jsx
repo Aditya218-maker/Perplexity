@@ -3,17 +3,17 @@ import { router } from "./app.routes"
 import { useAuth } from "../features/auth/hook/useAuth"
 import { useEffect } from "react"
 
+
 function App() {
 
   const auth = useAuth()
 
-  useEffect(()=> {
+  useEffect(() => {
     auth.handleGetMe()
   }, [])
 
-
-  return(
-    <RouterProvider router = {router} />
+  return (
+    <RouterProvider router={router} />
   )
 }
 
